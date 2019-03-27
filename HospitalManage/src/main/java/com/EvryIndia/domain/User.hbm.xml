@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 26, 2019 3:38:05 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.EvryIndia.domain.User" table="USER">
+        <id name="patientId" type="int">
+            <column name="PATIENTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="patientName" type="java.lang.String">
+            <column name="PATIENTNAME" />
+        </property>
+        <property name="age" type="int">
+            <column name="AGE" />
+        </property>
+        <property name="bloodGroup" type="java.lang.String">
+            <column name="BLOODGROUP" />
+        </property>
+    </class>
+</hibernate-mapping>
